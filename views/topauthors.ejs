@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="font-size: 20px; text-align: left;">   
+        <thead>
+            <tr>
+                <th>Szerző </th>
+                <th>Idézet db: </th>
+            </tr>
+        </thead>
+    <% for(let i = authors.length-1; i > 0; i--){ %> 
+     <% if (authors[i].length!=0){ %>
+        <% for(const n of authors[i]){ %>
+            <tr>
+                <td><%= n %>:</td>
+                <td style="padding-left: 80px;"><%= i %></td>
+            </tr>
+       <% } %>   
+      <%  } %>   
+    <% }  %>
+    </table>
+</body>
+</html>

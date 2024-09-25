@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="search" name="text">
+        <h2>Keresett szövegek: </h2>
+        <% for (let index = 0; index < quote.length; index++) { %>
+                <p><%= quote[index] %></p>
+            <% }%>
+    </form>
+</body>
+</html> 

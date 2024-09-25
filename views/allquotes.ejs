@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">All Quotes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th style="text-align: left; padding-left: 150px;">Qoute</th>
+                <th style="text-align: left;">Author</th>
+            </tr>
+        </thead>
+        
+<% for (let i = 0; i < quotes.length; i++) { %> 
+        <tr>
+            <td><%= quotes[i].id %></td>
+            <td><%= quotes[i].quote %></td>
+            <td><%= quotes[i].author %></td>
+        </tr>
+        <% } %>
+    </table>
+</body>
+</html>
